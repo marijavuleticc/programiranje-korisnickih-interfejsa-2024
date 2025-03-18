@@ -48,6 +48,9 @@
   p{
     color: white !important;
   }
+  h1{
+    color: white !important;
+  }
   .container{
     margin-top: 30px;
     display: flex;
@@ -64,6 +67,16 @@
   }
   mat-card {
     flex: 1 1 calc(33.33% - 20px); 
-    max-width: 300px;
+    max-width: 1200px;
+  }
+
+  .search-card{
+    width: 1000px;
+  }
+
+  .search-form{
+    display: flex;
+    justify-content: left;
+    gap: 5px;
   }
  

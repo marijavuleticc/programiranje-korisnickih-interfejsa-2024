@@ -6,6 +6,9 @@ import {MatCardModule} from '@angular/material/card';
 import { Movies } from './movies';
 import { RouterLink } from '@angular/router';
 import {MatListModule} from '@angular/material/list';
+import { MovieModel } from '../../models/movie.model';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @Component({
@@ -16,7 +19,9 @@ import {MatListModule} from '@angular/material/list';
     HttpClientModule,
     NgFor, 
     RouterLink, 
-    MatListModule
+    MatListModule,
+    MatInputModule,
+    MatSelectModule
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './home.component.html',
@@ -24,8 +29,20 @@ import {MatListModule} from '@angular/material/list';
 })
 export class HomeComponent {
 
-  public recommended: any[] = [] //| undefined=undefined
+  public recommended: MovieModel[] = [] //| undefined=undefined
   public movies = Movies.getAllMovies()
+  public filmovi: string[]=[
+    'The Town','Interstellar','Get Out','The Purge','Fast Five','Anna','In Time','Big Mommas House'
+  ]
+  public bioskopi: string[]=[
+    'Svi bioskopi','Beograd','Novi Sad','Kragujevac'
+
+  ]
+
+  public dates: string[]=[
+    'Today','21. mart, Sutra','22. mart, Subota','23. mart, Nedelja','24. mart, Ponedeljak'
+
+  ]
 
 
   public generateImageUrl(name: string){

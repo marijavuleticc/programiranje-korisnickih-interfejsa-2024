@@ -3,11 +3,11 @@ export interface MovieModel{
 	name: string
 	genre: string
 	duration: string
-	director: string,
-	actors: string,
+	director: string
+	actors: string
 	releaseDate: string
 	ticketPrice: string
 	averageRating: number
 	poster: string
-	description:
+	description: string
 }
