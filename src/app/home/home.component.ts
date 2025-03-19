@@ -1,4 +1,5 @@
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
@@ -9,19 +10,22 @@ import {MatListModule} from '@angular/material/list';
 import { MovieModel } from '../../models/movie.model';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import {NgxSkeletonLoaderModule} from 'ngx-skeleton-loader'
 
 
 @Component({
   selector: 'app-home',
   imports: [
     MatCardModule,
+    CommonModule,
     MatButtonModule,
     HttpClientModule,
     NgFor, 
     RouterLink, 
     MatListModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    NgxSkeletonLoaderModule
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './home.component.html',
@@ -48,5 +52,4 @@ export class HomeComponent {
   public generateImageUrl(name: string){
     return name
   }
-
 }
