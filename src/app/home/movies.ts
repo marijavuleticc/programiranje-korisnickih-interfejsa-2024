@@ -105,6 +105,32 @@ static getAllMovies(){
 			poster:"pictures/BigMommasHouse.jpg",
 			description: "Malcolm Turner is an honest FBI agent and is known as a master of disguises. When a woman and her son are threatened by a goon, he decides to go undercover as an older woman to protect her."
 		   },
+		   {
+			id: 9,
+		  	name:"The Accountant",
+			genre:"Thriller",
+			duration:"128 min",
+			director:"Gavin O'Connor",
+			actors:["Ben Affleck"," Anna Kendrick"," J.K. Simmons"],
+			releaseDate:"14-10-2016",
+			ticketPrice:"$9.50",
+			averageRating:7.3,
+			poster:"pictures/TheAccountant.jpg",
+			description: "Accountant Christian Wolff works for various illegal companies and manipulates their financial records. When the FBI learns about his truth, he takes up a legitimate client to bluff the officers."
+		   },
+		   {
+			id: 10,
+		  	name:"Miss Congeniality",
+			genre:"Comedy",
+			duration:"109 min",
+			director:"Donald Petrie",
+			actors:["Sandra Bullock"," Michael Caine"],
+			releaseDate:"14-12-2000",
+			ticketPrice:"$5.50",
+			averageRating:6.3,
+			poster:"pictures/miss.jpg",
+			description: "Gracie Hart, a tomboyish detective, is made to infiltrate the Miss United States beauty pageant as a contestant after her department learns that the event is under threat from an anonymous bomber."
+		   },
 
 		]
 	}

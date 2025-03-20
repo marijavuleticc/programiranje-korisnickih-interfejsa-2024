@@ -36,7 +36,7 @@ export class HomeComponent {
   public recommended: MovieModel[] = [] //| undefined=undefined
   public movies = Movies.getAllMovies()
   public filmovi: string[]=[
-    'The Town','Interstellar','Get Out','The Purge','Fast Five','Anna','In Time','Big Mommas House'
+    'The Town','Interstellar','Get Out','The Purge','Fast Five','Anna','In Time','Big Mommas House','The Accountant','Miss Congeniality'
   ]
   public bioskopi: string[]=[
     'Svi bioskopi','Beograd','Novi Sad','Kragujevac'
